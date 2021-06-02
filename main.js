@@ -20,4 +20,13 @@ function populateHeader (obj) {
     myH1.textContent = obj['squadName'];
     myH1.style.fontFamily = '\'Orbitron\', sans-serif';
     header.appendChild(myH1);
+
+    const myPara = document.createElement('p');
+    myPara.textContent = 'Hometown: ' + obj['homeTown'] + ' // Formed: ' + obj['formed'];
+    myPara.style.fontFamily = 'Arial, Helvetica, sans-serif';
+    header.appendChild(myPara);
+}
+
+function showHeroes(obj) {
+    
 }
